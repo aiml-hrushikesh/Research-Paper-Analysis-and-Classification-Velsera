@@ -3,7 +3,7 @@ import pandas as pd
 import re
 
 # Define base directory
-base_dir = r"C:\Users\2020714\OneDrive - Revvity\Documents\Practice_self_projects\Velsera Research Paper Analysis\Research-Paper-Analysis-and-Classification-Velsera\Dataset"
+base_dir = r"Dataset"
 
 # Initialize list to store data
 data = []
