@@ -142,9 +142,3 @@ Integrate Apache Kafka or Redis Streams for streaming data analysis
 
 🛠️ FastAPI, Docker
 
-
-bash
-Copy
-Edit
-jupyter notebook Disease_Specific_Identification_from_Abstracts.ipynb
-Let me know if you want a Dockerfile, REST API script with FastAPI, or sample outputs as JSON!
