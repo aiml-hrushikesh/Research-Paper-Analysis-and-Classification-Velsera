@@ -15,13 +15,18 @@ Comparing baseline vs fine-tuned model performance with metrics like accuracy, F
 ├── dataset/
 │   ├── cancer/               # Text files containing cancer-related abstracts
 │   └── non_cancer/           # Text files containing non-cancer abstracts
+
 ├── preparing_dataset_csv.py  # Script to preprocess text files and generate CSV
 ├── fine_tuning_data.csv      # Generated dataset CSV for classification
+
 ├── Question_1_and_3_Research_Paper_Analysis_&_Classification_Pipeline_Velsera.ipynb
 │                             # Notebook for classification model training & evaluation
+
 ├── Disease_Specific_Identification_from_Abstracts.ipynb
 │                             # Notebook for disease name extraction
+
 └── README.md                 # Project documentation
+
 🧪 1. Dataset Preparation
 Input Format: Raw .txt files in two folders: cancer and non_cancer, each with id, title, and abstract.
 
@@ -32,6 +37,7 @@ Combined into a single CSV using preparing_dataset_csv.py
 Output CSV: fine_tuning_data.csv with fields: id, text, label
 
 Labels: 1 for Cancer, 0 for Non-Cancer
+
 
 🧠 2. Model Selection
 🔹 Classification Model
@@ -60,6 +66,7 @@ Trained on the BioCreative V CDR corpus
 
 Outperforms general NER models for disease entity detection
 
+
 🏋️ 3. Fine-Tuning Process
 Approach: LoRA-based fine-tuning of DistilBERT on binary classification task.
 
@@ -68,6 +75,7 @@ Notebook: Question_1_and_3_Research_Paper_Analysis_&_Classification_Pipeline_Vel
 Libraries Used:
 
 transformers, datasets, scikit-learn, pandas, LoRA, PyTorch
+
 
 🏷️ 4. Multi-Label Classification Output Format
 Example:
@@ -79,6 +87,8 @@ Example:
     "Non-Cancer": 0.08
   }
 }
+
+
 🧬 5. Disease Extraction Output Format
 Notebook: Disease_Specific_Identification_from_Abstracts.ipynb
 
@@ -88,6 +98,7 @@ Example:
   "abstract_id": "PMC1234567",
   "extracted_diseases": ["Lung Cancer", "Breast Cancer"]
 }
+
 
 🚀 Bonus: Deployment and Scalability
 🔧 Agentic Workflow & Orchestration
@@ -101,6 +112,7 @@ ClassifierAgent
 
 EvaluatorAgent
 
+
 🌐 Cloud Deployment
 Expose pipeline via REST API using FastAPI
 
@@ -112,10 +124,12 @@ Hugging Face Spaces (demo-ready)
 
 Use Docker for containerization
 
+
 ⚙️ Scalability Enhancements
 Batch inference support for large abstract datasets
 
 Integrate Apache Kafka or Redis Streams for streaming data analysis
+
 
 ✅ Libraries Used
 🤗 transformers, datasets
