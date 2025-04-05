@@ -1,4 +1,5 @@
-📄** Research Paper Analysis & Classification Pipeline**
+📄Research Paper Analysis & Classification Pipeline
+
 🎯 Objective
 The goal of this project is to fine-tune an open-source language model for biomedical text classification and disease extraction. The tasks include:
 
@@ -7,6 +8,7 @@ Classifying research paper abstracts into Cancer and Non-Cancer categories using
 Extracting disease mentions (e.g., "Lung Cancer", "Breast Cancer") from abstracts using a biomedical NER model.
 
 Comparing baseline vs fine-tuned model performance with metrics like accuracy, F1-score, and confusion matrix.
+
 
 🗂️ Project Structure
 
@@ -126,33 +128,6 @@ Integrate Apache Kafka or Redis Streams for streaming data analysis
 
 🛠️ FastAPI, Docker
 
-📌 How to Run
-Clone the repo:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-repo-name.git
-cd your-repo-name
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run preprocessing:
-
-bash
-Copy
-Edit
-python preparing_dataset_csv.py
-Open and run fine-tuning notebook:
-
-bash
-Copy
-Edit
-jupyter notebook Question_1_and_3_Research_Paper_Analysis_&_Classification_Pipeline_Velsera.ipynb
-Run disease extraction:
 
 bash
 Copy
